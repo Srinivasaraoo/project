@@ -1,7 +1,5 @@
 FROM maven:3-openjdk-8 AS builder
 RUN git clone https://github.com/wakaleo/game-of-life.git && cd game-of-life && mvn package
-
-
 # application image
 FROM tomcat:9
 LABEL author="khaja"
