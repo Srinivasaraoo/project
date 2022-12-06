@@ -5,4 +5,4 @@ ENV PATH='/springpetclinic.jar'
 ARG URL
 ADD ${URL} ${PATH}
 EXPOSE 8080
-CMD [ "java", "-jar", ${PATH} ]
+CMD [ "java", "-jar", ${PATH} "--host", "0.0.0.0" ] 
